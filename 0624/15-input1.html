@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="#">
+        <input type="hidden" name="hidden" value="123456"><!--사용자에게는 안보이지만 실제로 서버에서는 필요한 정보일 경우 hidden 태그 사용-->
+        <label>아이디: <input type="text" name="id"></label><!--text는 보통 id 입력-->
+        <label>비밀번호: <input type="password" name="pw"></label><!--pw 입력-->
+        <button type="submit">전송</button>
+        <!--값은 실제로 전송되지만 사용자에게 보이지는 않는다.-->
+    </form>
+</body>
+</html>

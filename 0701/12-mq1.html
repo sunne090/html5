@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>top down 방식</title>
+    <style>
+        /*미디어 쿼리: 화면크기 줄어드는 순간 이미지 변경, 데스크탑->모바일*/
+        body {
+            background: url("images/bg0.jpg") no-repeat fixed;
+            background-size: cover;
+        }
+        @media screen and (max-width: 1024px) {/*1024px보다 줄어들 때 조건 실행*/
+            body {
+                background: url("images/bg1.jpg") no-repeat fixed;
+            }
+        }
+        @media screen and (max-width: 760px) {/*760px보다 줄어들 때 조건 실행*/
+            body {
+                background: url("images/bg2.jpg") no-repeat fixed;
+            }
+        }
+        @media screen and (max-width: 600px) {/*600px보다 줄어들 때 조건 실행*/
+            body {
+                background: url("images/bg3.jpg") no-repeat fixed;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>

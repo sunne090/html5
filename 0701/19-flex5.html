@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="default.css">
+    <style>
+        .flex-container {
+            height: 300px;
+            display: flex;
+            align-items: baseline;
+            /*align-items: stretch 기본값*/
+            /*align-items: flex-start 아이템 기준으로 위쪽 정렬, 크기 아이템 맞춰서 줄어듬*/
+            /*align-items: flex-end 아이템 기준으로 아래쪽 정렬, 크기 아이템 맞춰서 줄어듬*/
+            /*align-items: center 아이템 기준으로 가운데 정렬, 크기 아이템 맞춰서 줄어듬*/
+            /*align-items: baseline 아이템의 밑부분에 맞춰서 정렬*/
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item" style ="font-size: 2rem;">AAAAAAAAAAAA</div>
+        <div class="flex-item" style ="font-size: 1rem;">BBBB</div>
+        <div class="flex-item" style ="font-size: 3rem;">CCCCCCCC</div>
+    </div>
+</body>
+</html>

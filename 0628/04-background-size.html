@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            width: 600px;
+            height: 450px;
+            background-repeat: no-repeat;
+            background-image: url("img/plants.jpg");
+            background-size: 60%;
+            /*auto: 원본 이미지 그대로 표시, 좌측 상단 맞춰서*/
+            /*contain: 창 기준 div 패널 채우고 나서 남은 부분은 자르기*/
+            /* border: 1px solid black; */
+            border: 20px dotted black;
+            padding: 20px;
+            background-position : right bottom;/*우측 하단 정렬*/
+            background-origin: content-box;
+            /*border-box: 기준점이 보더박스까지 내려감*/
+            /*padding-box: 기준점이 패딩박스까지 내려감*/
+            /*content-box: 기준점이 콘텐츠박스까지 내려감*/
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+</body>
+</html>

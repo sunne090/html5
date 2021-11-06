@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .input:focus {
+            background-color: springgreen;    
+        }/*focus: 마우스 클릭했을 때 이벤트*/
+        #btn:hover {
+            color : red;
+        }/*hover: 마우스 올렸을 때 이벤트*/
+        #div {
+            width: 100px;
+            height: 100px;
+            background-color: steelblue;
+        }
+        #div:active {
+            background-color: turquoise;
+        }/*active: 대상요소가 활성화 되었을 때(클릭할 때) 이벤트*/
+        .enable:enabled {
+            background-color: yellowgreen;
+        }/*enabled: 대상요소가 사용 가능할 때 이벤트*/
+        .enable:disabled {
+            background-color: grey;
+        }/*disabled: 대상요소가 사용 불가능할 때 이벤트*/
+    </style>
+</head>
+<body>
+    <input type="text" class="input">
+    <button id="btn">버튼</button>
+    <div id="div"></div>
+    <input type="text" class="enable" disabled><!--disabled: 사용불가하게 만드는 속성-->
+</body>
+</html>

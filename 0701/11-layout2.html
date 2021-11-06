@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>크기가 변하는 옛날 방식 가변 그리드 레이아웃</title>
+    <style>
+        .wrapper {
+            width: 96%;
+            margin: 0 auto;
+        }
+        header {
+            width: 100%;
+            height: 120px;
+            background-color: #066cfa;
+            border-bottom: 1px solid #222;
+        }
+        .header-text {
+            font-size: 40px;
+            color: white;
+            text-align: center;
+            line-height: 120px;
+        }
+        .content {
+            float: left;
+            width: 62.5%;
+            height: 400px;
+            padding: 15px;
+            background-color: #ffd800;
+        }
+        .right-side {
+            float: right;
+            width: 33.3%;/*크기 줄이면 사이드바 내려와버림*/
+            height: 400px;
+            padding: 15px;
+            background-color: cyan;
+        }
+        .footer {
+            clear: both;
+            width: 100%;
+            background-color: darkorange;
+            height: 120px;
+        }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <header>
+            <h1 class="header-text">가변 그리드 레이아웃</h1>
+        </header>
+        <section class="content">
+            <h4>본문</h4>
+        </section>
+        <aside class="right-side">
+            <h4>사이드바</h4>
+        </aside>
+        <footer class="footer">
+            <h4>푸터</h4>
+        </footer>
+    </div>
+</body>
+</html>

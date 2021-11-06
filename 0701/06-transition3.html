@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tr1 {
+            width: 200px;
+            height: 200px;
+            background-color: red;
+            /* transition-duration: 1s;
+            transition-timing-function: cubic-bezier(0.29, -1.01, 0.62, 1.95); */
+            /*큐빅베지어: 애니메이션 효과, 개발자도구에서 그래프 설정 후 설정값 복붙*/
+            /* transition-delay: 5s;지연 후 실행 */
+            /* transition-property: transition-delay, background-color;딜레이를 전혀 다른 속성에 각각 줄 수 있음 */
+        }
+        .tr1:hover {
+            transform: translateX(200px);/*오른쪽으로 200px 이동*/
+            background-color: cornflowerblue;
+            transition: all 1s cubic-bezier(0.29, -1.01, 0.62, 1.95) 3s; 
+            /*property, duration, cubic-bezier, delay-> 속성 한번에 적기*/
+            /*각각의 속성마다 값을 주려면 따로 적어야 함*/
+        }
+    </style>
+</head>
+<body>
+    <div class="tr1"></div>
+</body>
+</html>

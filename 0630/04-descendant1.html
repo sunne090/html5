@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .st1 li { /*하위 선택자*/
+            /* border : 1px solid slateblue; */
+        }
+        .st1 > li {/*자식선택자*/
+            border : 1px solid slateblue;
+        }
+        .sb1+li {/*인접형제선택자: 내 요소 바로 아래쪽에 있는 요소에 css 주고자 할 때 사용*/
+            /* background-color: steelblue; */
+        }
+        .sb1 ~ li {/*형제선택자: 내 요소 밑에 있는 모든 요소에 css 주기 위한 선택자*/
+            background-color: cornflowerblue;
+        }
+    </style>
+</head>
+<body>
+    <ul class="st1">
+        <li>A</li>
+        <li>B</li>
+        <li>
+            <ul>
+                <li>1</li>
+                <li class="sb1">2</li>
+                <li>3</li>
+                <li>4</li>
+            </ul>
+            C</li>
+        <li>D</li>
+    </ul>
+    <ul>
+        <li>E</li>
+        <li>F</li>
+        <li>G</li>
+        <li>H</li>
+    </ul>
+</body>
+</html>

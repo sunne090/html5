@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 200px;
+            height: 150px;
+            border : 1px solid black;
+        }
+        .d1 {
+            background-color: lightcoral;
+            /* margin : 10px; */
+            margin : 40px 30px 20px 10px;
+        }
+        .d2 {
+            background-color: lightblue;
+            margin-top : 30px;
+        }
+        /*중첩되는 마진은 마진이 큰 값으로 적용됨(합쳐지는거 아님)*/
+    </style>
+</head>
+<body>
+    <div class="d1"></div>
+    <div class="d2">안녕!</div>
+</body>
+</html>

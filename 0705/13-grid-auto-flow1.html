@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="default.css">
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(25%, auto));
+            grid-template-rows: repeat(5, minmax(50px, auto));
+            /* grid-auto-flow: dense; */
+            /*칸 부족해서 못들어가는 요소 내리고 자리 들어갈 수 있는 크기 요소 먼저 올리기*/
+            /* grid-auto-flow: column; */
+            /*세로로 나열*/
+            /* grid-auto-flow: row dense; */
+            /*가로로 빈공간 우선으로 채우는 방법*/
+            grid-auto-flow: column dense;
+            /*세로로 빈공간 우선 채움*/
+        }
+        .grid-item:nth-child(2){
+            grid-column: auto / span 3; /*auto: 자기 위치, 3칸 확장*/
+        }
+        .grid-item:nth-child(5){
+            grid-column: auto / span 3; /*auto: 자기 위치*/
+        }
+        .grid-item:nth-child(7){
+            grid-column: auto / span 2; /*auto: 자기 위치*/
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">A</div>
+        <div class="grid-item">B</div>
+        <div class="grid-item">C</div>
+        <div class="grid-item">D</div>
+        <div class="grid-item">E</div>
+        <div class="grid-item">F</div>
+        <div class="grid-item">G</div>
+        <div class="grid-item">H</div>
+        <div class="grid-item">I</div>
+        <div class="grid-item">J</div>
+        <div class="grid-item">K</div>
+        <div class="grid-item">L</div>
+        <div class="grid-item">M</div>
+    </div>
+</body>
+</html>

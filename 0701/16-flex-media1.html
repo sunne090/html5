@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="default.css">
+    <style>
+        .flex-container {
+            display: flex;
+            flex-direction: column;/*위에서 아래로 배치*/
+        }
+        @media (min-width: 600px){/*가로 넓이가 600px 이상을 만족하면*/
+            .flex-container {
+                flex-direction: row;
+                /*좌에서 우로 배치*/
+            }
+            .flex-item {
+                flex : 1;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item">AAAAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+        <div class="flex-item">BBBBBBBBBBBBBBBBBBBBBBB</div>
+        <div class="flex-item">CCCCCCCC</div>
+    </div>
+</body>
+</html>

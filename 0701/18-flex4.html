@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="default.css">
+    <style>
+        .flex-container {
+            display: flex;
+        }
+        .jc1 {
+            justify-content: space-between;
+        }
+        .jc2 {
+            justify-content: space-around;
+        }/*요소의 양쪽 간격이 서로 같게 한다*/
+        .jc3 {
+            justify-content: space-evenly;
+        }/*요소의 사이 간격이 서로 같게 한다.*/
+    </style>
+</head>
+<body>
+    <div class="flex-container jc1">
+        <div class="flex-item">AAAAAAAAAAAA</div>
+        <div class="flex-item">BBBB</div>
+        <div class="flex-item">CCCCCCCC</div>
+    </div>
+    <div class="flex-container jc2">
+        <div class="flex-item">AAAAAAAAAAAA</div>
+        <div class="flex-item">BBBB</div>
+        <div class="flex-item">CCCCCCCC</div>
+    </div>
+    <div class="flex-container jc3">
+        <div class="flex-item">AAAAAAAAAAAA</div>
+        <div class="flex-item">BBBB</div>
+        <div class="flex-item">CCCCCCCC</div>
+    </div>
+</body>
+</html>

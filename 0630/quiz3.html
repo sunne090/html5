@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .div1 {
+            width: 1000px;
+            height: 480px;
+            overflow: hidden;
+        }
+        #vi {
+            width: 1000px;
+            height: 500;
+            z-index: -1;
+        }
+        .content p {
+            font-size: 1em;
+            font-weight: 800;
+        }
+        .content h3 {
+            font-size: 2em;
+            padding-left: 50px;
+        }
+        .content {
+            width: 1000px;
+            height: 500px;
+            position: absolute;/*절대위치*/
+            padding: 0% 15%;
+            z-index: 0;
+            top: 250px;
+            left: 250px;
+            bottom: 0;
+            right: 150px;
+        }
+    </style>
+</head>
+<body>
+    <div class="div1">
+        <video autoplay muted loop id="vi">
+            <source src="../0629/media/flame.mp4">
+        </video>
+    </div>
+    <div class="content">
+        <p>사람을 구체적으로 도와주는 책</p>
+        <h3>ABC서적</h3>
+    </div>
+</body>
+</html>

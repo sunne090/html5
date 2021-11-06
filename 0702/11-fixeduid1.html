@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="default.css">
+    <style>
+        .flex-container {
+            display: flex;
+        }
+        .flex-item:nth-child(1){
+            flex-shrink: 0; /*컨텐츠에 맞춤*/
+            width: 150px;
+            /*컨텐츠 고정*/
+        }
+        .flex-item:nth-child(2){
+            flex-grow: 1;/*아이템 컨테이너 크기에 맞춰서 확장*/
+            /*컨텐츠 길이 자동조정*/
+        }
+        .flex-item:nth-child(3){
+            flex-shrink: 0;
+            width: 200px;
+            /*컨텐츠 고정*/
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item item1">
+        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cupiditate porro veniam aut harum, quis dolorum! Optio suscipit, veniam neque deleniti unde quibusdam fugit sed tempore itaque, similique cumque perspiciatis quas?
+        </div>
+        <div class="flex-item item2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim corrupti quia nam dolorum placeat error atque, illum officia tenetur ratione numquam culpa vel qui nihil eaque ut, quam temporibus non.
+        </div>
+        <div class="flex-item item3">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non quidem cum reprehenderit laborum illo. Atque modi quas fugit vel reiciendis magni voluptatibus est animi ad quibusdam, non deleniti inventore dolor?
+        </div>
+    </div>
+</body>
+</html>

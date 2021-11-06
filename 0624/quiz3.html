@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>회원 가입</h1>
+    <form action="#" method="get">
+        <label for="name">이름<input type="text" name="name" id="name" placeholder="이름을 입력하세요" pattern="[가-힣]{3,}" required></label><br>
+        <label for="id">ID<input type="text" name="id" id="id" required></label><br>
+        <label for="pw">PW<input type="password" name="pw" id="pw" required></label><br>
+        <label for="pwck">PW 확인<input type="password" name="pwck" id="pwck" required></label><br>
+        <label for="mail">이메일<input type="email" name="mail" id="mail" placeholder="email@gmail.com" title="이메일 형식에 맞춰서 입력해주세요" required></label><br>
+        <label>성별</label>
+        <label><input type="radio" name="gen" class="gen" checked>남자</label>
+        <label><input type="radio" name="gen" class="gen">여자</label>
+        <label><input type="radio" name="gen" class="gen">그외</label><br>
+        <label for="tel">전화번호<input type="tel" name="tel" id="tel"></label><br>
+        <label for="site">홈페이지<input type="url" name="site" id="site" required></label><br>
+        <label for="birth">생일<input type="date" name="birth" id="birth"></label><br>
+        <label for="color">좋아하는 색깔<input type="color" name="color" id="color"></label><br>
+        <label>관심분야</label><br>
+        <label><input type="checkbox" name="E" class="class">경제</label>
+        <label><input type="checkbox" name="I" class="class">IT</label>
+        <label><input type="checkbox" name="S" class="class">사회</label>
+        <label><input type="checkbox" name="Sc" class="class">과학</label>
+        <label><input type="checkbox" name="Mu" class="class">음악</label>
+        <label><input type="checkbox" name="A" class="class">미술</label>
+        <br>
+
+        <button type="submit">확인</button>
+        <button type="reset">취소</button>
+    </form>
+</body>
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="default.css">
+    <style>
+        .flex-container {
+            display: flex;
+            height: 100vh;
+            align-items: flex-end;
+        }
+        .flex-item:nth-child(2){
+            align-self: stretch;
+            /*아이템 단위로 정렬하고 싶을 때 사용하는 속성, 우선순위 1등*/
+            /*align-self: auto; flex-container 속성 따라가기*/
+            /*align-self: flex-end; 아래로 정렬*/
+            /*align-self: flex-start 위로 정렬;*/
+            /*align-self: stretch; 확장*/
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item item1">AAAAAAAAAAAAAAAAAAAAAA</div>
+        <div class="flex-item item2">BBBBBB</div>
+        <div class="flex-item item3">CCCCCCCCCCCC</div>
+    </div>
+</body>
+</html>

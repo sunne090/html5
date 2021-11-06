@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        textarea {
+            width: 500px;
+            height: 100px;
+        }
+        p {
+            font-weight: bold;
+        }
+        fieldset {
+            width: 550px
+        }
+        label {
+            margin-left: 2em;
+        }
+    </style>
+</head>
+<body>
+    <fieldset>
+    <h1>프런트엔드 개발자 지원서</h1>
+    <p>HTML, CSS, Javascript에 대한 기술적 이해와 경험이 있는 분을 찾습니다.</p>
+    <hr>
+    
+    <form action="#" method="get">
+        <p class="p1">개인정보</p>
+        <label for="name">이 름 <input type="text" name="name" id="name"></label><br>
+        <label for="mail">이메일 <input type="email" name="mail" id="mail"></label><br>
+        <button type="submit">예약하기</button>
+        <p class="p2">지원 분야</p>
+        <label for="name"><input type="radio" name="name" class="ca"> 웹 퍼블리싱</label><br>
+        <label for="name"><input type="radio" name="name" class="ca"> 웹 어플리케이션 개발</label><br>
+        <label for="name"><input type="radio" name="name" class="ca"> 개발 환경 개선</label><br>
+        <p class="p3">지원동기</p>
+        <textarea placeholder="본사 지원 동기를 간략히 써 주세요."></textarea><br>
+
+        <button type="submit">접수하기</button>
+        <button type="reset">다시 쓰기</button>
+    </form>
+</fieldset>
+</body>
+</html>

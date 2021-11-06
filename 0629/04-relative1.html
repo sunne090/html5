@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            padding: 10px;
+            border : 1px solid black;
+            position: relative;
+            margin : 20px;
+        }
+        .d1 {
+            width: 200px;
+            height: 150px;
+            background-color: lightcoral;
+            border : 1px solid black;
+            margin : 5px;
+            top : 50px;
+            left : 50px;
+            position: relative;
+        }
+        .d2 {
+            width: 200px;
+            height: 150px;
+            background-color: lightgreen;
+            border : 1px solid black;
+            margin : 5px;
+            position: absolute;
+            /*상위 블록 기준(스태틱이 아닌 블록) 디폴트 스태틱이고 아무것도 해당 안되면 바디까지 넘어감*/
+            top: 20px;
+            left: 20px;
+        }
+        .d3 {
+            width: 200px;
+            height: 150px;
+            background-color: lightskyblue;
+            border : 1px solid black;
+            margin : 5px;
+            position: absolute;
+            right: 0px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="d1"></div>
+        <div class="d2"></div>
+        <div class="d3"></div>
+    </div>
+</body>
+</html>

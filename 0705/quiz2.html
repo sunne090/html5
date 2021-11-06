@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+        }
+        .menu {
+            width: 100%;
+            height: 50px;
+            background-color: black;
+        }
+        .nav {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: left;
+        }
+        .nav li {
+            display: inline-block;
+            padding-left: 10px;
+            padding-top: 15px;
+        }
+        .nav a {
+            text-decoration: none;
+            color: white;
+        }
+        .headerimg {
+            width: 100%;
+            height: 500px;
+            background: url("images/header.jpg") no-repeat center;
+        }
+        .art1 {
+            border: 2px dashed lightgrey;
+            width: 100%;
+            height: 400px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;    
+        }
+        .coffee-img {
+            background: url("images/coffee.jpg");
+            width: 300px;
+            height: 200px;
+            display: inline;
+            margin-top: 50px;
+        }
+        .coffee-intro, .address {
+            width: 300px;
+            height: 200px;
+            display: inline;
+            margin-top: 50px;
+        }
+        .art2 {
+            border: 2px dashed lightgrey;
+            background-color: lightgrey;
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;    
+        }
+        .map-img {
+            background: url("images/map.jpg");
+            width: 300px;
+            height: 200px;
+            display: inline;
+            margin-top: 50px;
+        }
+        .aside {
+            border: 2px dashed lightgrey;
+            width: 100%;
+            height: 400px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;   
+        }
+        .ice-img {
+            background: url("images/ice.jpg");
+            width: 250px;
+            height: 180px;
+            border-radius: 90%;
+            margin-top: 50px;
+        }
+        .rec {
+            display: inline;
+            width: 300px;
+            height: 300px;
+            margin-top: 50px;
+        }
+        footer{ 
+            width: 100%;
+            height: 50px;
+            background:black; 
+            color: white; 
+            text-align: center;
+        }
+        footer p {
+            font-size: 1rem;
+        }
+
+        @media screen and (max-width: 1024px) {/*1024px보다 줄어들 때 조건 실행*/
+            .art1 {
+                display: inline-flex;
+                flex-direction: column;
+            }
+            .coffee-img {
+                display: none;
+            }
+            .art2 {
+                display: inline-flex;
+                flex-direction: column;
+            }
+            .sec1 {
+                display: inline
+            }
+            .map-img {
+                display: none;
+            }
+            .ice-img {
+                display: none;
+            }
+            .rec {
+                width: max-content;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <ul class="nav">
+                <li><a href="#">카페 소개</a></li>
+                <li><a href="#">오시는 길</a></li>
+                <li><a href="#">이 달의 추천</a></li>
+            </ul>
+        </div>
+        <div class="headerimg"></div>
+    </header>
+    <main>
+        <section class="sec1">
+            <article class="art1">
+                <div class="coffee-img"></div>
+                <div class="coffee-intro">
+                    <p>영업 시간: 오전 9시 ~ 밤 10시</p>
+                    <p>휴무 : 매주 수요일<span>(수요일이 공휴일일 경우 수요일 영업, 다음날 휴무)</span></p>
+                </div>
+            </article>
+        </section>
+        <section>
+            <article class="art2">
+                <div class="map-img"></div>
+                <div class="address">
+                    <p>영업 시간: 오전 9시 ~ 밤 10시</p>
+                    <p>휴무 : 매주 수요일<span>(수요일이 공휴일일 경우 수요일 영업, 다음날 휴무)</span></p>
+                </div>
+            </article>
+        </section>
+        <section>
+            <aside class="aside">
+                <div class="rec">
+                    <h3>핸드드립 아이스커피</h3>
+                    <ol>
+                        <li>1인분 기준으로 서버에 각얼음 5조각(한조각에 20cc)넣고 추출을 시작한다.</li>
+                        <li>평상시보다 원두의 양은 2배 정도(20g)와 추출액은 얼음 포함해서 200cc까지 내린다.</li>
+                        <li>아이스 잔에 얼음 6~7개 섞어서 시원하게 마신다.</li>
+                    </ol>
+                </div>
+                <div class="ice-img"></div>
+            </aside>
+        </section>
+    </main>
+    <footer>
+        <p>my times with coffee</p>
+    </footer>
+</body>
+</html>

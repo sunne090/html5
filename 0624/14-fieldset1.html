@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>로그인 정보</legend>
+            <ul>
+                <li><label>아이디:<input type="text" id="user_id" name="user_id"></label></li>
+                <li><label>비밀번호:<input type="password" id="user_pw" name="user_pw"></label></li>    
+            </ul>
+        </fieldset>
+        <fieldset disabled><!--fieldset에 disabled 지정 시 블록 단위로 접근 제어-->
+            <legend>가입자 정보</legend>
+            <ul>
+                <!--input type에 name을 작성 안하면 데이터 전송이 안됨-->
+                <li><label for="user_name">이름 : <input type="text" id="user_name" name="user_name"></label></li>
+                <li><label for="user_mail">메일주소: <input type="text" id="user_mail" name="user_mail"></label></li>
+                <li><label for="user_birth">생년월일: <input type="text" id="user_birth" name="user_birth"></label></li>
+                <!--label에 for 값을 넣어줘야 라벨 눌렀을 때 input 활성화 됨-->
+            </ul>
+        </fieldset>
+        <fieldset>
+            <button type = submit>가입하기</button>
+        </fieldset>
+    </form>
+</body>
+</html>

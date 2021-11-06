@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* *전체선택자 */
+        * {
+            border : 1px solid blue;
+        }
+        /* 태그선택자 */
+        p {
+            font-size: 32px;
+        }
+        /* id선택자, id값 앞에 반드시 #, 우선순위 높음*/
+        #jj {
+            background-color: yellow;
+        }
+        /* 클래스선택자, 클래스 앞에 반드시 . */
+        .tang {
+            font-weight: bold;/*글씨 굵기 조절*/
+            background-color: green !important; /*id의 노란색이 우선인데 !important를 통해 강제로 우선순위 높힘 */
+        }
+        /* 그룹선택자 */
+        #jj, .tang {
+            font-style: italic;/*글씨 스타일 조절*/
+        }
+        /*아래에 있는게 일반적으로 가장 우선*/
+    </style>
+</head>
+<body>
+    <h1>중식</h1>
+    <p id="jj" class="tang">짜장면</p>
+    <p>짬뽕</p>
+    <p class="tang">탕수육</p>
+    <p>팔보채</p>
+    <p>볶음밥</p>
+</body>
+</html>

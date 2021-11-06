@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            text-align : center;
+            color : #2b2b2b;
+        }
+        table, tr, td {
+            border : 1px solid black;
+        }
+        table {
+            width: 200px;
+            margin: 0 auto;
+            border-collapse: collapse;
+        }
+        td {
+            text-align: left;
+            padding: 10px;
+            padding-left: 20px;
+        }
+        tr:nth-child(2n) {
+            background-color: chartreuse;
+        }/*nth-child(2n): 짝수 칸에 있는 항목에 이벤트 적용, 2n+1은 홀수*/
+        table tr:first-child {
+            background-color: lightcoral;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>오늘 뭐 드셨나요</h1>
+        <table>
+            <tr>
+                <td>콩나물</td>
+            </tr>
+            <tr>
+                <td>떡국</td>
+            </tr>
+            <tr>
+                <td>치킨</td>
+            </tr>
+            <tr>
+                <td>순대</td>
+            </tr>
+            <tr>
+                <td>깍두기</td>
+            </tr>
+            <tr>
+                <td>김자반</td>
+            </tr>
+            <tr>
+                <td>순두부</td>
+            </tr>
+            <tr>
+                <td>떡볶이</td>
+            </tr>
+            <tr>
+                <td>샐러드</td>
+            </tr>
+            <tr>
+                <td>라면</td>
+            </tr>
+        </table>
+    </div>
+</body>
+</html>

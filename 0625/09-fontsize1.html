@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .p1 {
+            font-size: 16px;
+            font-style: italic;
+        }
+        /*px로 크기를 지정할 경우 브라우저 크기에 상관 없이 px 크기가 고정됨*/
+        /*em, rem은 브라우저에서 제공하는 폰트 사이즈를 기준으로 함*/
+        .p2 {
+            font-size: 1rem;
+            /*color : lightcoral; */
+            color : #ff0000;
+            /*color : rgb(255,0,0);*/
+            /*color : #0ff;*/
+            /* 텍스트 컬러 변경하는 여러가지 방법 */
+            /*color : rgba(255,0,0,0.3);*/
+            /*rgba는 투명도 나타낼때 사용/ 맨 뒤에 0~1 사이의 소수 입력 */
+            opacity: 0.8; /* 투명도 설정 기능 */
+        }
+        /*1em=16px*/
+        .p3 {
+            font-size: 30px;
+        }
+        .em {
+            font-size: 1em;
+        }
+        .rem {
+            font-size: 1rem;
+            font-weight: bold;
+        }/*rem은 html을 기준으로 함*/
+        .vari {
+            font-variant: small-caps;
+            /*small-caps: 영문소문자를 대문자로 표기*/
+        }
+    </style>
+</head>
+<body>
+    <p class="p1">국가는 농지에 관하여 경자유전의 원칙이 달성될 수 있도록 노력하여야 하며, 농지의 소작제도는 금지된다.</p>
+    <p class="p2">국가는 농지에 관하여 경자유전의 원칙이 달성될 수 있도록 노력하여야 하며, 농지의 소작제도는 금지된다.</p>
+    <p class="p3">국가는 농지에 관하여 <span class="em">경자유전의 원칙</span>이 달성될 수 있도록 노력하여야 하며, <span class="rem">농지의 소작제도</span>는 금지된다.</p>
+    <p class="vari">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Cupiditate at delectus praesentium perferendis quisquam laborum dolor adipisci nostrum laudantium sed tenetur maiores commodi aperiam nemo, mollitia inventore voluptatibus ratione vel.</p>
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div.wrapper {
+            position: relative;
+        }
+        div.wrapper > div {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            border: 1px solid black;
+            font-size: 26px;
+        }
+        .b1 {
+            top: 50px;
+            left: 50px;
+            background-color: palevioletred;
+            z-index: 2;/*숫자가 클 수록 위로 올라옴, 팝업창 같은 경우 999로 설정*/
+        }
+        .b2 {
+            top: 110px;
+            left: 70px;
+            background-color: peru;
+            z-index: 1;
+        }
+        .b3 {
+            top: 70px;
+            left: 110px;
+            background-color: lime;
+        }  
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="b1">1</div>
+        <div class="b2">2</div>
+        <div class="b3">3</div>
+    </div>
+</body>
+</html>

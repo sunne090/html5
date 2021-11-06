@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="default.css">
+    <style>
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-auto-rows: minmax(100px, auto);
+            gap: 1rem;
+        }
+        .grid-item:first-child {
+            /* grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 4; */
+            grid-area: 1 / 1 / 4 /3;
+            /*row-start/ column-start/ row-end/ column-end*/
+        }
+        .grid-item:nth-child(3){
+            /* grid-column: 3 / span 1;  */
+            /*collumn-start/column-end*/
+            /* grid-row: 2 / span 2;  */
+            /*row-start/ row-end*/
+            grid-column: 3;
+            grid-row: 2;
+            /*위치 이동 옵션*/
+        }
+        .grid-item:nth-child(4) {
+            grid-column: 3;
+            grid-row: 2 / span 3; /*2/5랑 똑같음*/
+            opacity: 0.3; /*c랑 d가 겹치는데 c가 d밑으로 간다.*/
+        }
+    </style>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">A</div>
+        <div class="grid-item">B</div>
+        <div class="grid-item">C</div>
+        <div class="grid-item">D</div>
+        <div class="grid-item">E</div>
+        <div class="grid-item">F</div>
+        <div class="grid-item">G</div>
+        <div class="grid-item">H</div>
+        <div class="grid-item">I</div>
+        <div class="grid-item">G</div>
+        <div class="grid-item">H</div>
+        <div class="grid-item">I</div>
+        <div class="grid-item">I</div>
+    </div>
+</body>
+</html>

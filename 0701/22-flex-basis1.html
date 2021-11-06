@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="default.css">
+    <style>
+        .flex-container {
+            display: flex;
+        }
+        .flex-item.item1{
+            flex-basis: 200px;
+            /*컨텐츠가 flex-basis 넘어갈 경우 컨텐츠 크기에 맞춰 적용*/
+        }
+        .flex-item.item2 {
+            width: 200px;/*가로축을 고정해야 하는 경우엔 그냥 width 쓰기*/
+            white-space: nowrap;/*줄바꿈 없앰*/
+            overflow: hidden;
+        }
+        .flex-item.item3 {
+            max-width: 400px;
+            min-width: 200px;
+            flex-basis: 200px;
+            /*둘이 같이 명시될 경우 width가 우선권을 가짐*/
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container jc1">
+        <div class="flex-item item1">AAAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+        <div class="flex-item item1">BBBB</div>
+        <div class="flex-item item1">CCCCCCCC</div>
+    </div>
+    <div class="flex-container jc2">
+        <div class="flex-item item2">AAAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+        <div class="flex-item item2">BBBB</div>
+        <div class="flex-item item2">CCCCCCCC</div>
+    </div>
+    <div class="flex-container jc3">
+        <div class="flex-item item3">AAAAAAAAAAAAAAAAAAAAAAAAAAA</div>
+        <div class="flex-item item3">BBBB</div>
+        <div class="flex-item item3">CCCCCCCC</div>
+    </div>
+</body>
+</html>

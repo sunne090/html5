@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <form action="#" method="get">
+        <select name="sel" id="sel">
+            <!--multiple: 다수선택 가능-->
+            <optgroup label="게임">
+                <option value="star">스타크래프트</option>
+                <option value="lol" selected>롤</option>
+                <!--selected: 우선 선택 기능-->
+                <option value="fifa">피파</option>
+                <option value="wow">와우</option>
+            </optgroup>
+            <optgroup label="스포츠">
+                <option value="soccer">축구</option>
+                <option value="baseball">야구</option>
+                <option value="golf">골프</option>
+            </optgroup>
+            <optgroup label="주식">
+                <option value="kakao">카카오</option>
+                <option value="naver">네이버</option>
+                <option value="samsung">삼성전자</option>
+            </optgroup>
+            <!--optgroup: 종목을 카테고리별로 나눌 수 있음, label 통해서 카테고리 이름 부여-->
+        </select>
+        <button type="submit">전송</button>
+    </form>
+</body>
+
+</html>

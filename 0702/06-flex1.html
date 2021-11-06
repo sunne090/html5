@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="default.css">
+    <style>
+        .flex-container {
+            display: flex;
+        }
+        .flex-item:nth-child(1){
+            /* flex: 1;  */
+            /*flex-grow = 1*/
+            /* flex: 0 1 20%; */
+            /* flex: 1 1 0; */
+            width : 300px;/*너비에 강제성 부여*/
+        }
+        .flex-item:nth-child(2){
+            /* flex: 1; */
+            /* flex: 0 1 60% */
+            flex: 3 1 0;
+        }
+        .flex-item:nth-child(3){
+            /* flex: 1; */
+            /* flex: 0 1 20% */
+            flex: 1 1 0; /*%와 동일한 효과*/
+        }
+        p {
+            white-space: nowrap;
+            overflow: hidden;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item item1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi voluptatum porro quasi culpa voluptas perferendis quibusdam temporibus vel debitis expedita quo velit, excepturi delectus quam laborum placeat odit. A, eos.</div>
+        <div class="flex-item item2">BBBBBB</div>
+        <div class="flex-item item3">CCCCCCCCCCCC</div>
+    </div>
+</body>
+</html>

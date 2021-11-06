@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="default.css">
+    <style>
+        .grid-container {
+            display: grid;
+            /* grid-template-columns: 100px 300px 200px;기로 3칸의 값 지정 */
+            /* grid-template-rows: 200px 200px 100px;세로 3칸의 값 지정 */
+            /* grid-template-rows: 200px 200px auto; */
+            /*여기서 auto는 item 기준으로, width에 auto 주는 것과 동일 */
+            /* grid-template-columns: 1fr 3fr 2fr; */
+            /* grid-template-rows: 2fr 2fr 1fr; */
+            /*fr은 컨텐츠랑 상관 없이 셀 기준으로 창 비율에 맞춰서 길이 조정함*/
+            /* grid-template-columns: 200px 1fr 200px; */
+            /*양쪽은 크기 고정, 중앙값만 조정됨*/
+            grid-template-columns: repeat(3, 1fr 2fr 1fr);/*121반복, 위에서 9칸 다 채워서 밑에껀 동작X*/
+            grid-template-rows: repeat(3, 1fr);
+            /*가로 3개 1fr*/
+            height: 80vh;
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <div class="grid-item">A</div>
+        <div class="grid-item">B</div>
+        <div class="grid-item">C</div>
+        <div class="grid-item">D</div>
+        <div class="grid-item">E</div>
+        <div class="grid-item">F</div>
+        <div class="grid-item">G</div>
+        <div class="grid-item">H</div>
+        <div class="grid-item">I</div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .origin {
+            width: 200px;
+            height: 134px;
+            border: 1px solid black;
+            float: left;
+            margin: 40px;
+        }
+        .movex:hover {
+            transform: translateX(50px);
+        }/*translateX: X축이동(음수값:왼쪽, 양숫값:오른쪽)*/
+        .movey:hover {
+            transform: translateY(50px);
+        }/*translateY: Y축이동(음수값:아래쪽, 양숫값:위쪽)*/
+        .movexy:hover {
+            transform: translate(50px, 50px);
+        }
+        .movez:hover {
+            transform: perspective(500px) translateZ(-50px);
+        }/*perspective: 2차원->3차원으로 공간 확장시키는 속성, 음숫값: 안쪽으로, 양숫값: 바깥쪽으로*/
+        .move3d:hover {
+            transform: perspective(500px) translate3d(20px, 30px, 80px);
+        }/*translated3d(x축, y축, z축) -> 무조건 perspective가 있어야 함*/
+    
+    </style>
+</head>
+<body>
+    <div class="origin">
+        <div class="movex"><img src="images/bus.jpg" alt=""></div>
+    </div>
+    <div class="origin">
+        <div class="movey"><img src="images/bus.jpg" alt=""></div>
+    </div>
+    <div class="origin">
+        <div class="movexy"><img src="images/bus.jpg" alt=""></div>
+    </div>
+    <div class="origin">
+        <div class="movez"><img src="images/bus.jpg" alt=""></div>
+    </div>
+    <div class="origin">
+        <div class="move3d"><img src="images/bus.jpg" alt=""></div>
+    </div>
+</body>
+</html>

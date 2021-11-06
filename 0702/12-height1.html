@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>모바일 화면에서 버튼 바닥으로 내리는 법</title>
+    <link rel="stylesheet" href="default.css">
+    <style>
+        .page {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+        .content {
+            flex: 1 auto;/*grow:1, basis:auto*/
+            /*footer이 아래쪽으로 밀림*/
+        }
+    </style>
+</head>
+<body>
+    <div class="page">
+        <header class="header flex-item">header</header>
+        <section class="content">
+            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Culpa praesentium quo doloremque distinctio sed cumque inventore eligendi, magni ex sit natus deleniti neque repudiandae incidunt possimus soluta odit animi ad.
+        </section>
+        <footer class="footer flex-item">footer</footer>
+    </div>
+</body>
+</html>

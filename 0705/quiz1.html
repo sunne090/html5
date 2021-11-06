@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gamja+Flower&family=Noto+Sans+KR:wght@100;300&display=swap" rel="stylesheet">    
+    <style>
+        * {
+            margin: 0;
+        }
+        .menu {
+            width: 100%;
+            height: 10px;
+            background-color: black;
+        }
+        .menubar {
+            list-style-type: none;
+        }
+        .menubar li {
+            display: inline-block;
+            padding: 10px;
+            margin-top: 10px;
+        }
+        .menubar li a {
+            text-decoration: none;
+            color: white;
+        }
+        .header-img {
+            background: url("images/header.jpg") no-repeat;
+            width: 100%;
+            height: 350px;
+        }
+        .art, .art2 {
+            width: 100%;
+            height: 350px;
+            border: 2px dashed lightgrey;
+        }
+        h2 {
+            margin: 20px;
+            font-family: 'Gamja Flower', cursive;
+            font-size: 2em;
+        }
+        .art2 {
+            background-color: #eee;
+        }
+        .coffee-img {
+            background: url("images/coffee.jpg");
+            width: 300px;
+            height: 200px;
+            float: left;
+            display: inline;
+            margin-left: 70px;
+            margin-right: 50px;
+        }
+        .coffee-intro, .address {
+            line-height: 50px;
+            font-family: 'Noto Sans KR', sans-serif;
+            float: right;
+            margin-right: 150px;
+        }
+        .coffee-intro span {
+            font-style: italic;
+        }
+        .map-img {
+            background: url("images/map.jpg");
+            width: 300px;
+            height: 200px;
+            float: left;
+            display: inline;
+            margin-left: 70px;
+            margin-right: 50px;
+        }
+        .rec {
+            float: left;
+            display: inline;
+            width: 300px;
+            height: 300px;
+            margin-left: 70px;
+            margin-right: 30px;
+        }
+        .ice-img {
+            background: url("images/ice.jpg");
+            width: 250px;
+            height: 180px;
+            float: right;
+            border-radius: 90%;
+        }   
+        footer{ 
+            margin-bottom: 0;
+            width: 100%;
+            height: 50px;
+            background:black; 
+            color: white; 
+            text-align: center;
+            display: inline-block;
+        }
+        footer p {
+            font-size: 2rem;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <div class="menu">
+            <ul class="menubar">
+                <li><a href="#">카페 소개</a></li>
+                <li><a href="#">오시는 길</a></li>
+                <li><a href="#">이 달의 추천</a></li>
+            </ul>
+        </div>
+        <div class="header-img"></div>
+    </header>
+    <main>
+        <section>
+            <article class="art">
+                <h2>카페소개</h2>
+                <div class="coffee-img"></div>
+                <div class="coffee-intro">
+                    <p>영업 시간: 오전 9시 ~ 밤 10시</p>
+                    <p>휴무 : 매주 수요일<span>(수요일이 공휴일일 경우 수요일 영업, 다음날 휴무)</span></p>
+                </div>
+            </article>
+            <article class="art2">
+                <h2>오시는 길</h2>
+                <div class="map-img"></div>
+                <div class="address">
+                    <p>서귀포시 안덕면 사계리 0000-0000</p>
+                    <p>제주 올레 10코스 산방산 근처</p>
+                </div>
+            </article>
+        </section>
+        <section>
+            <aside>
+                <h2>이 달의 추천</h2>
+                <div class="rec">
+                    <h3>핸드드립 아이스커피</h3>
+                    <ol>
+                        <li>1인분 기준으로 서버에 각얼음 5조각(한조각에 20cc)넣고 추출을 시작한다.</li>
+                        <li>평상시보다 원두의 양은 2배 정도(20g)와 추출액은 얼음 포함해서 200cc까지 내린다.</li>
+                        <li>아이스 잔에 얼음 6~7개 섞어서 시원하게 마신다.</li>
+                    </ol>
+                </div>
+                <div class="ice-img"></div>
+            </aside>
+        </section>
+    </main>
+    <footer class="footer"><p>my times with coffee</p></footer>
+</body>
+</html>

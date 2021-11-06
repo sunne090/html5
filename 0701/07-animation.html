@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        @keyframes change-bg {
+            from {
+                background-color: darkcyan;
+                border: 1px solid black;           
+            }/*첫번째 실행*/
+            50% {
+                background-color: rosybrown;
+                transform: rotateX(45deg);
+            }/*두번째 실행*/
+            to {
+                background-color: darkgoldenrod;
+                border : 3px solid darkslateblue;
+                border-radius: 50%;
+            }/*세번째 실행*/
+        }
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: darkcyan;
+            animation-name: change-bg;/*애니메이션과 링크*/
+            animation-duration: 6s;/*애니메이션 지속 시간, 반드시 표기*/
+            animation-direction: alternate-reverse;
+            /*reverse: 애니메이션 순서 to->from*/
+            /*normal: 애니메이션 실행하고 원래 위치로 돌아가기(기본값)*/
+            /*alternate: 실행이 끝나면 반대방향으로 실행하기*/
+            /*alternate-reverse: 반대쪽부터 실행해서 실행이 끝나면 반대방향으로*/
+            animation-iteration-count: 2;/*애니메이션 반복 횟수(infinite: 무한반복)*/
+        
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

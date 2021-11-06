@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            position: relative;
+            text-align: center;
+            margin-top: 30%;
+            margin-left: 30%;
+        }
+        h2 {
+            font-size: 2em;
+        }
+        h1 {
+            font-size: 3.5em;
+        }
+        video {
+            position: fixed;
+            right: 0;
+            bottom: 0;
+            min-width: 100%;
+            min-height: 100%;
+            z-index: -100;
+        }
+
+    </style>
+</head>
+<body>
+    <video autoplay loop muted poster="../0629/media/flame.jpg"><!--poster: 썸네일처럼 동영상이 재생되지 않을 때 사진을 보여주는 것-->
+        <source src="../0629/media/flame.mp4">
+    </video>
+    <div class="container">
+        <h2>사람을 구체적으로 도와주는 책</h2>
+        <h1>ABC서적</h1>
+    </div>
+</body>
+</html>

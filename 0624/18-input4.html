@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        label{
+            background-color: #00ff00;
+        }
+        
+    </style>
+</head>
+<body>
+    <form action="#" method="GET">
+        <h1>1. 다음 중 우리나라의 국화는?</h1>
+        <ul>
+            <li><label>무궁화<input type="radio" name="ans" class="ans" value="1" checked></label></li>
+            <li><label>민들레<input type="radio" name="ans" class="ans" value="2"></label></li>
+            <li><label>장미<input type="radio" name="ans" class="ans" value="3"></label></li>
+            <li><label>안개꽃<input type="radio" name="ans" class="ans" value="4"></label></li>
+        </ul>
+        <h1>2. 컴퓨터 언어의 종류가 아닌 것은?</h1>
+        <ul>
+            <li><label>C<input type="checkbox" name="cbox" value="a"></label></li>
+            <li><label>JSON<input type="checkbox" name="cbox" value="b"></label></li>
+            <li><label>JAVA<input type="checkbox" name="cbox" value="c"></label></li>
+            <li><label>JavaScript<input type="checkbox" name="cbox" value="d"></label></li>
+            <li><label>Spring<input type="checkbox" name="cbox" value="d"></label></li>
+        </ul>
+        <ul>
+            <li><input type="color" name="color" id="color"></li>
+        </ul>
+        <ul>
+            <li><button type="submit">전송</button>
+        </ul>
+    </form> 
+</body>
+</html>
+<!--라디오 버튼은 반드시 name이 동일해야 값을 하나만 선택 가능-->
+<!--id는 고유한 값만 가져야 함 -> 같은 값을 지정할 수 없음 / class는 중복된 여러개의 값을 가짐-->
+<!--라디오버튼 경우에는 id 대신 class 값을 사용-->
+<!--checkbox 나 radio는 value 값을 넣어주자-->
+<!--checked 옵션 넣어주면 시작부터 check 되어있음-->
+<!--checkbox 값에서 name 값은 무조건 통일되어야 함-->

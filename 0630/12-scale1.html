@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="kr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>요소 확대 축소</title>
+    <style>
+        .origin {
+            width: 210px;
+            height: 200px;
+            border: 1px solid black;
+            float: left;
+            margin: 30px;
+        }
+        /*scale: 요소를 늘리고 줄이는 속성, 배숫값을 넣는다.*/
+        .scalex:hover {
+            transform:scalex(1.2);
+        }/*x축 조정*/
+        .scaley:hover {
+            transform:scaley(1.5);
+        }/*y축 조정*/
+        .scale:hover {
+            transform: scale(0.7);
+        }/*x,y축 조정*/
+
+    </style>
+</head>
+<body>
+    <div class="origin">
+        <div class="scalex"><img src="images/fruit.jpg" alt=""></div>
+    </div>
+    <div class="origin">
+        <div class="scaley"><img src="images/fruit.jpg" alt=""></div>
+    </div>
+    <div class="origin">
+        <div class="scale"><img src="images/fruit.jpg" alt=""></div>
+    </div>
+</body>
+</html>

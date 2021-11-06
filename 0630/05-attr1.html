@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /*속성연산자는 많이 사용하지 않는 것이 좋음*/
+        /* a[href] { 
+             background-color: darksalmon; 
+         }*/ /* []: a가 href의 속성을 가진 경우 조건 실행 */
+        a[href="abc"] {
+            background-color: darkseagreen;
+        }/* =:a href 의 값이 abc일 경우 조건 실행*/
+        a[class~="aaa"] {
+            background-color: darkturquoise;
+        }/* ~: 복수의 값중 아무거나 만족 시 조건 실행*/
+        /* a[class^="x"]{
+            background-color: greenyellow;
+        } ^:맨 앞 접두어가 x로 시작하면 조건 실행 */
+        /* a[class|= "xx"]{
+            background-color: deeppink;
+        } |:xx라는 값이 맨 앞에 있으면 조건 실행, 연산우선순위가 낮아져서 equal의 의미와 비슷 */
+        a[class$="y"] {
+            border: 3px solid springgreen;
+        } /* $:class가 y로 끝나면 조건 만족(접미어)*/
+        a[href*="b"] {
+            border : 3px solid crimson;
+        }/* *: 값에 b가 들어있으면 조건 만족 */
+    
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a>메인메뉴</a></li>
+        <li><a href="abc">메뉴1</a></li>
+        <li><a href="" class="aaa bbb">메뉴2</a></li>
+        <li><a href="" class="xx yy">메뉴3</a></li>
+        <li><a href="" class="xx">메뉴4</a></li>
+    </ul>
+</body>
+</html>

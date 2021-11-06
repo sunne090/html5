@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-shrink</title>
+    <link rel="stylesheet" href="default.css">
+    <style>
+        /*공백이 있어야 shrink 동작, 공백 없으면 동작 안함*/
+        .flex-container {
+            display: flex;
+        }
+        .flex-item {
+            flex-basis: 300px;
+        }
+        .item1 {
+            flex-shrink: 1;
+        }
+        .item2 {
+            flex-shrink: 2;
+        }
+        .item3 {
+            flex-shrink: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="flex-item item1">AAAAAAAAAAAAAA</div>
+        <div class="flex-item item2">BBBBBB</div>
+        <div class="flex-item item3">CCCCCCCCCCCC</div>
+    </div>
+</body>
+</html>
